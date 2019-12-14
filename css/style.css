@@ -1,0 +1,236 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* CLEARFIX */
+
+.clearfix:before,
+.clearfix:after {
+    content:"";
+    display:table;
+}
+.clearfix:after {
+    clear:both;
+}
+/* For IE 6/7 (trigger hasLayout) */
+.clearfix {
+    zoom:1;
+}
+
+/* STYLE */
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+	line-height: 1.4;
+	color: #222;
+}
+
+.cookie {
+	z-index: 5000;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	padding: 5px 85px 5px 10px;
+	background: #444 url(../images/cookie-bg.png) repeat-x top left;
+}
+
+.cookie-accept {
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	right: 10px;
+	margin-top: -13px;
+	display: inline-block;
+	vertical-align: middle;
+	background: #a0e689;
+    background: -webkit-gradient(linear,left top,left bottom,from(#a0e689),to(#6dd94a));
+    background: -webkit-linear-gradient(#a0e689,#6dd94a);
+    background: linear-gradient(#a0e689,#6dd94a);
+    border: 1px solid #a0e689;
+    border-bottom-color: #5cd435;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    color: #393939;
+    text-shadow: 1px 1px 0 #fff;
+    -webkit-box-shadow: rgba(255,255,255,.5) 0 1px 0 0 inset;
+    box-shadow: rgba(255,255,255,.5) 0 1px 0 0 inset;
+    text-decoration: none;
+    font-size: 12px;
+    padding: 4px 13px;
+}
+
+.cookie p {
+	font-size: 12px;
+	color: #ddd;
+}
+
+.cookie p span {
+	color: #fff;
+}
+
+.cookie p a {
+	color: #fff;
+}
+
+.header {
+	padding: 180px 50px;
+	text-align: center;
+	background: #f1f2f3;
+	font-family: Tahoma, serif;
+}
+
+h1 {
+	font-size: 3rem;
+}
+
+h1 a {
+	color: #6592a7;
+	text-decoration: none;
+}
+
+.wrapper {
+	max-width: 1024px;
+	padding: 20px 10px;
+	margin: 0 auto;
+}
+
+.main-menu {
+	text-align: center;
+	margin-bottom: 60px;
+}
+
+.main-menu li a {
+	color: #6592a7;
+	font-size: 1.125rem;
+	text-decoration: none;
+}
+
+.txt {
+	margin-bottom: 16px;
+	color: #777;
+	font-size: 1rem;
+	line-height: 1.6;
+}
+
+.footer {
+	background: #333;
+	color: #fff;
+	padding: 80px 0;
+	margin-top: 80px;
+}
+
+.footer-inner {
+	margin: 0 auto;
+	max-width: 1024px;
+	padding: 0 10px;
+	font-size: 0.75rem;
+}
+
+.bottom-menu {
+	color: #fff;
+	margin-bottom: 8px;
+}
+
+.bottom-menu a {
+	color: #6592a7;
+}
+
+.created {
+	background: #fafafa;
+	color: #7d818e;
+	border: 1px solid #abb1c2;
+	padding: 10px;
+	font-size: 1.375rem;
+	text-align: center;
+	color: #4e5056;
+	font-weight: 700;
+}
+
+.created img {
+	max-width: 260px;
+	margin: 10px auto 0;
+	height: auto;
+	width: 100%;
+	display: block;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-bottom: 8px;
+}
+
+.img-responsive {
+	display: block;
+	margin: 0 auto;
+	height: auto;
+	max-width: 100%;
+}
+
+@media screen and (max-width: 1023px) {
+	.cookie {
+		padding: 4px 10px;
+	}
+	.cookie-accept {
+		position: relative;
+		margin: 10px 0 0;
+		display: block;
+		padding: 4px 10px;
+		top: auto;
+		right: auto;
+	}
+	.header {
+		padding: 40px 20px;
+	}
+	h1 {
+		font-size: 2.125rem;
+	}
+}
